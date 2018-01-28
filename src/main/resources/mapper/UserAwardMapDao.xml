@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.imooc.o2o.dao.UserAwardMapDao">
+    <resultMap type="com.imooc.o2o.entity.UserAwardMap" id="userAwardMap">
+        <id column="user_award_id" property="userAwardId" />
+		<result column="create_time" property="createTime" />
+		<result column="used_status" property="usedStatus" />
+		<result column="point" property="point" />
+		<association property="award" column="awrad_id" javaType="com.imooc.o2o.entity.Award">
+		  <id column="award_id" property="awardId"/>
+		  <result column="award_name" property="awardName"/>
+		</association>
+		<association property="user" column="user_id" javaType="com.imooc.o2o.entity.PersonInfo">
+		  <id column="user_id" property="userId"/>
+		  <result column="name" property="name"/>
+		</association>
+		<association property="shop" column="shop_id"
+			javaType="com.imooc.o2o.entity.Shop">
+			<id column="shop_id" property="shopId" />
+			<result column="shop_name" property="shopName" />
+		</association>
+		<association property="operator" column="operator_id"
+			javaType="com.imooc.o2o.entity.PersonInfo">
+			<id column="operator_id" property="userId" />
+			<result column="operator_name" property="name" />
+		</association>
+    </resultMap>
+	<select id="selectUserAwardMapByCondition" resultMap="userAwardMap">
+		SELECT
+		uam.user_award_id,
+		uam.create_time,
+		uam.used_status,
+		uam.point,
+		buyer.user_id,
+		buyer.name,
+		s.shop_id,
+		s.shop_name,
+		a.award_id,
+		a.award_name,
+		operator.user_id AS operator_id,
+		operator.name AS operator_name
+		FROM
+		tb_user_award_map uam,
+		tb_person_info buyer,
+		tb_shop s,
+		tb_award a,
+		tb_person_info operator
+		<where>
+			uam.user_id = buyer.user_id
+			and
+			uam.shop_id = s.shop_id
+			and
+			uam.award_id = a.award_id
+			and
+			uam.operator_id = operator.user_id
+			<!-- 按顾客信息精确查询 -->
+			<if
+				test="userAwardCondition.user!=null
+				 and userAwardCondition.user.userId!=null">
+				and uam.user_id = #{userAwardCondition.user.userId}
+			</if>
+			<!-- 按某个店铺精确查询 -->
+			<if
+				test="userAwardCondition.shop!=null
+				 and userAwardCondition.shop.shopId!=null">
+				and uam.shop_id = #{userAwardCondition.shop.shopId}
+			</if>
+			<!-- 按顾客名字模糊查询 -->
+			<if
+				test="userAwardCondition.user!=null 
+				and userAwardCondition.user.name!=null">
+				and buyer.name like
+				'%${userAwardCondition.user.name}%'
+			</if>
+			<!-- 按奖品名模糊查询 -->
+			<if
+				test="userAwardCondition.award!=null
+				 and userAwardCondition.award.awardName!=null">
+				and a.award_name like
+				'%${userAwardCondition.award.awardName}%'
+			</if>
+			<!-- 按奖品可用状态查询 -->
+			<if test="userAwardCondition.usedStatus!=null">
+				and uam.used_status = #{userAwardCondition.usedStatus}
+			</if>
+		</where>
+		ORDER BY uam.create_time desc
+		LIMIT #{rowIndex},#{pageSize};
+	</select>
+	
+	<select id="selectUserAwardMapCountByCondition" resultType="int">
+	    select
+	    count(1)
+	    from
+	    tb_user_award_map uam,
+	    tb_shop s,
+	    tb_person_info buyer,
+	    tb_award a,
+		tb_person_info operator
+		<where>
+			uam.user_id = buyer.user_id
+			and
+			uam.shop_id = s.shop_id
+			and
+			uam.award_id = a.award_id
+			and
+			uam.operator_id = operator.user_id
+			<!-- 按顾客信息精确查询 -->
+			<if
+				test="userAwardCondition.user!=null
+				 and userAwardCondition.user.userId!=null">
+				and uam.user_id = #{userAwardCondition.user.userId}
+			</if>
+			<!-- 按某个店铺精确查询 -->
+			<if
+				test="userAwardCondition.shop!=null
+				 and userAwardCondition.shop.shopId!=null">
+				and uam.shop_id = #{userAwardCondition.shop.shopId}
+			</if>
+			<!-- 按顾客名字模糊查询 -->
+			<if
+				test="userAwardCondition.user!=null 
+				and userAwardCondition.user.name!=null">
+				and buyer.name like
+				'%${userAwardCondition.user.name}%'
+			</if>
+			<!-- 按奖品名模糊查询 -->
+			<if
+				test="userAwardCondition.award!=null
+				 and userAwardCondition.award.awardName!=null">
+				and a.award_name like
+				'%${userAwardCondition.award.awardName}%'
+			</if>
+			<!-- 按奖品可用状态查询 -->
+			<if test="userAwardCondition.usedStatus!=null">
+				and uam.used_status = #{userAwardCondition.usedStatus}
+			</if>
+		</where>
+	</select>
+	
+	<select id="selectUserAwardMapById" resultMap="userAwardMap">
+	    SELECT
+		uam.user_award_id,
+		uam.create_time,
+		uam.used_status,
+		uam.point,
+		buyer.user_id,
+		buyer.name,
+		s.shop_id,
+		s.shop_name,
+		a.award_id,
+		a.award_name,
+		operator.user_id AS operator_id,
+		operator.name AS operator_name
+		FROM
+		tb_user_award_map uam,
+		tb_person_info buyer,
+		tb_shop s,
+		tb_award a,
+		tb_person_info operator
+		WHERE
+		uam.user_id = buyer.user_id
+		and
+		uam.shop_id
+		= s.shop_id
+		and
+		uam.award_id
+		= a.award_id
+		and
+		uam.operator_id =
+		operator.user_id
+		and
+		user_award_id =
+		#{userAwardId}
+	</select>
+	
+	<update id="updateUserAwardMap" parameterType="com.imooc.o2o.entity.UserAwardMap" 
+	                           keyColumn="user_award_id" useGeneratedKeys="true">
+	    update tb_user_award_map
+	    set used_status = #{usedStatus}, operator_id = #{operator.userId}
+	    where
+	    user_award_id = #{userAwardId}
+	    and user_id = #{user.userId}
+	</update>
+	
+	<insert id="insertUserAwardMap" parameterType="com.imooc.o2o.entity.UserAwardMap"
+	                           keyColumn="user_award_id" useGeneratedKeys="true">
+	    INSERT
+		INTO
+		tb_user_award_map(user_id,award_id,shop_id,operator_id,
+		create_time,used_status,point)
+		VALUES
+		(#{user.userId},#{award.awardId},#{shop.shopId},#{operator.userId},
+		#{createTime},#{usedStatus},#{point})
+	</insert>
+	
+</mapper>

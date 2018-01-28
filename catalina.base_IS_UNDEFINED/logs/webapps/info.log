@@ -1,0 +1,129 @@
+2018-01-18 00:38:48.584 [main] INFO  com.imooc.o2o.O2oApplication - Starting O2oApplication on DESKTOP-M247JDC with PID 15280 (started by 10353 in F:\Spring Tool Suite\o2o)
+2018-01-18 00:38:48.650 [main] INFO  com.imooc.o2o.O2oApplication - No active profile set, falling back to default profiles: default
+2018-01-18 00:38:55.523 [main] INFO  com.imooc.o2o.cache.JedisPoolWriper - init jedispool success
+2018-01-18 00:38:57.253 [main] INFO  com.imooc.o2o.O2oApplication - Started O2oApplication in 9.404 seconds (JVM running for 11.35)
+2018-01-18 01:05:59.063 [http-nio-8080-exec-5] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 01:05:59.304 [http-nio-8080-exec-4] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 01:07:06.865 [http-nio-8080-exec-1] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 01:07:07.000 [http-nio-8080-exec-5] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 01:08:44.828 [http-nio-8080-exec-4] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 01:08:44.955 [http-nio-8080-exec-8] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 01:09:44.833 [http-nio-8080-exec-3] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 01:09:45.032 [http-nio-8080-exec-6] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 01:11:05.288 [http-nio-8080-exec-1] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 01:11:07.353 [http-nio-8080-exec-9] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 01:11:09.848 [http-nio-8080-exec-5] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 01:11:10.057 [http-nio-8080-exec-10] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 01:12:06.193 [http-nio-8080-exec-4] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 01:12:06.294 [http-nio-8080-exec-8] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 01:12:06.330 [http-nio-8080-exec-8] INFO  com.imooc.o2o.util.ShortNetAddressUtil - ready create connection...
+2018-01-18 01:12:06.337 [http-nio-8080-exec-1] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 01:12:06.337 [http-nio-8080-exec-1] INFO  c.imooc.o2o.web.shopadmin.ShopAuthManageController - 店铺权限管理请求到达
+2018-01-18 01:12:06.518 [http-nio-8080-exec-8] INFO  com.imooc.o2o.util.ShortNetAddressUtil - response string: {"tinyurl":"http:\/\/dwz.cn\/7gwE2P","status":0,"longurl":"https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx0ef11c0049518bbb&redirect_uri=http://smyang.s1.natapp.cc/o2o/shopadmin/addshopauthmap&response_type=code&scope=snsapi_userinfo&state=%7BaaashopIdaaa%3A28%2CaaacreateTimeaaa%3A1516209126295%7D#wechat_redirect","err_msg":""}
+2018-01-18 01:12:06.537 [http-nio-8080-exec-8] INFO  com.imooc.o2o.util.ShortNetAddressUtil - tinyurl: http://dwz.cn/7gwE2P
+2018-01-18 01:12:50.240 [http-nio-8080-exec-9] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 01:12:52.726 [http-nio-8080-exec-4] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 01:12:52.931 [http-nio-8080-exec-1] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 01:15:56.298 [http-nio-8080-exec-3] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 01:15:58.335 [http-nio-8080-exec-7] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 01:15:58.487 [http-nio-8080-exec-4] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 01:16:05.748 [http-nio-8080-exec-2] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 01:16:07.301 [http-nio-8080-exec-6] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 01:16:07.404 [http-nio-8080-exec-5] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 01:16:11.625 [http-nio-8080-exec-3] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 01:16:13.686 [http-nio-8080-exec-7] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 01:16:13.836 [http-nio-8080-exec-4] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 01:16:20.127 [http-nio-8080-exec-2] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 01:16:23.865 [http-nio-8080-exec-6] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 01:16:27.649 [http-nio-8080-exec-8] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 01:16:29.557 [http-nio-8080-exec-1] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 01:16:31.289 [http-nio-8080-exec-5] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 01:41:31.284 [http-nio-8080-exec-10] INFO  com.imooc.o2o.util.ShortNetAddressUtil - ready create connection...
+2018-01-18 01:41:31.409 [http-nio-8080-exec-10] INFO  com.imooc.o2o.util.ShortNetAddressUtil - response string: {"tinyurl":"http:\/\/dwz.cn\/7gwMBF","status":0,"longurl":"https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx0ef11c0049518bbb&redirect_uri=http://smyang.s1.natapp.cc/o2o/shopadmin/adduserproductmap&response_type=code&scope=snsapi_userinfo&state=%7BaaaproductIdaaa%3A1%2CaaacustomerIdaaa%3A9%2CaaacreateTimeaaa%3A1516210891284%7D#wechat_redirect","err_msg":""}
+2018-01-18 01:41:31.410 [http-nio-8080-exec-10] INFO  com.imooc.o2o.util.ShortNetAddressUtil - tinyurl: http://dwz.cn/7gwMBF
+2018-01-18 09:02:47.677 [main] INFO  com.imooc.o2o.O2oApplication - Starting O2oApplication on DESKTOP-M247JDC with PID 1528 (started by 10353 in F:\Spring Tool Suite\o2o)
+2018-01-18 09:02:47.731 [main] INFO  com.imooc.o2o.O2oApplication - No active profile set, falling back to default profiles: default
+2018-01-18 09:02:58.477 [main] INFO  com.imooc.o2o.cache.JedisPoolWriper - init jedispool success
+2018-01-18 09:03:00.852 [main] INFO  com.imooc.o2o.O2oApplication - Started O2oApplication in 14.191 seconds (JVM running for 17.311)
+2018-01-18 09:06:54.170 [http-nio-8080-exec-9] INFO  com.imooc.o2o.util.ShortNetAddressUtil - ready create connection...
+2018-01-18 09:06:54.346 [http-nio-8080-exec-9] INFO  com.imooc.o2o.util.ShortNetAddressUtil - response string: {"tinyurl":"http:\/\/dwz.cn\/7gyDIB","status":0,"longurl":"https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx0ef11c0049518bbb&redirect_uri=http://smyang.s1.natapp.cc/o2o/shopadmin/adduserproductmap&response_type=code&scope=snsapi_userinfo&state=%7BaaaproductIdaaa%3A1%2CaaacustomerIdaaa%3A9%2CaaacreateTimeaaa%3A1516237614147%7D#wechat_redirect","err_msg":""}
+2018-01-18 09:06:54.379 [http-nio-8080-exec-9] INFO  com.imooc.o2o.util.ShortNetAddressUtil - tinyurl: http://dwz.cn/7gyDIB
+2018-01-18 09:31:06.675 [main] INFO  com.imooc.o2o.O2oApplication - Starting O2oApplication on DESKTOP-M247JDC with PID 16360 (started by 10353 in F:\Spring Tool Suite\o2o)
+2018-01-18 09:31:06.678 [main] INFO  com.imooc.o2o.O2oApplication - No active profile set, falling back to default profiles: default
+2018-01-18 09:31:09.093 [main] INFO  com.imooc.o2o.cache.JedisPoolWriper - init jedispool success
+2018-01-18 09:31:10.075 [main] INFO  com.imooc.o2o.O2oApplication - Started O2oApplication in 3.609 seconds (JVM running for 4.596)
+2018-01-18 09:33:02.689 [http-nio-8080-exec-3] INFO  com.imooc.o2o.util.ShortNetAddressUtil - ready create connection...
+2018-01-18 09:33:03.062 [http-nio-8080-exec-3] INFO  com.imooc.o2o.util.ShortNetAddressUtil - response string: {"tinyurl":"http:\/\/dwz.cn\/7gyZV0","status":0,"longurl":"https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx0ef11c0049518bbb&redirect_uri=http://smyang.s1.natapp.cc/o2o/shopadmin/adduserproductmap&response_type=code&scope=snsapi_userinfo&state=%7BaaaproductIdaaa%3A8%2CaaacustomerIdaaa%3A9%2CaaacreateTimeaaa%3A1516239182685%7D#wechat_redirect","err_msg":""}
+2018-01-18 09:33:03.080 [http-nio-8080-exec-3] INFO  com.imooc.o2o.util.ShortNetAddressUtil - tinyurl: http://dwz.cn/7gyZV0
+2018-01-18 09:33:20.110 [http-nio-8080-exec-9] INFO  com.imooc.o2o.util.ShortNetAddressUtil - ready create connection...
+2018-01-18 09:33:20.191 [http-nio-8080-exec-9] INFO  com.imooc.o2o.util.ShortNetAddressUtil - response string: {"tinyurl":"http:\/\/dwz.cn\/7gz0b4","status":0,"longurl":"https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx0ef11c0049518bbb&redirect_uri=http://smyang.s1.natapp.cc/o2o/shopadmin/adduserproductmap&response_type=code&scope=snsapi_userinfo&state=%7BaaaproductIdaaa%3A8%2CaaacustomerIdaaa%3A9%2CaaacreateTimeaaa%3A1516239200109%7D#wechat_redirect","err_msg":""}
+2018-01-18 09:33:20.191 [http-nio-8080-exec-9] INFO  com.imooc.o2o.util.ShortNetAddressUtil - tinyurl: http://dwz.cn/7gz0b4
+2018-01-18 09:33:40.401 [http-nio-8080-exec-10] INFO  com.imooc.o2o.util.ShortNetAddressUtil - ready create connection...
+2018-01-18 09:33:40.515 [http-nio-8080-exec-10] INFO  com.imooc.o2o.util.ShortNetAddressUtil - response string: {"status":-1,"err_msg":"","longurl":""}
+2018-01-18 09:33:43.714 [http-nio-8080-exec-6] INFO  com.imooc.o2o.util.ShortNetAddressUtil - ready create connection...
+2018-01-18 09:33:43.783 [http-nio-8080-exec-6] INFO  com.imooc.o2o.util.ShortNetAddressUtil - response string: {"tinyurl":"http:\/\/dwz.cn\/7gz0yL","status":0,"longurl":"https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx0ef11c0049518bbb&redirect_uri=http://smyang.s1.natapp.cc/o2o/shopadmin/adduserproductmap&response_type=code&scope=snsapi_userinfo&state=%7BaaaproductIdaaa%3A1%2CaaacustomerIdaaa%3A9%2CaaacreateTimeaaa%3A1516239223714%7D#wechat_redirect","err_msg":""}
+2018-01-18 09:33:43.784 [http-nio-8080-exec-6] INFO  com.imooc.o2o.util.ShortNetAddressUtil - tinyurl: http://dwz.cn/7gz0yL
+2018-01-18 09:34:51.066 [http-nio-8080-exec-10] INFO  com.imooc.o2o.util.ShortNetAddressUtil - ready create connection...
+2018-01-18 09:34:51.237 [http-nio-8080-exec-10] INFO  com.imooc.o2o.util.ShortNetAddressUtil - response string: {"tinyurl":"http:\/\/dwz.cn\/7gz1Bz","status":0,"longurl":"https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx0ef11c0049518bbb&redirect_uri=http://smyang.s1.natapp.cc/o2o/shopadmin/exchangeaward&response_type=code&scope=snsapi_userinfo&state=%7BaaauserAwardIdaaa%3A37%2CaaacustomerIdaaa%3A9%2CaaacreateTimeaaa%3A1516239291066%7D#wechat_redirect","err_msg":""}
+2018-01-18 09:34:51.237 [http-nio-8080-exec-10] INFO  com.imooc.o2o.util.ShortNetAddressUtil - tinyurl: http://dwz.cn/7gz1Bz
+2018-01-18 09:35:33.814 [http-nio-8080-exec-1] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 09:35:34.317 [http-nio-8080-exec-7] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 09:35:48.289 [http-nio-8080-exec-9] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 09:36:17.558 [http-nio-8080-exec-7] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 09:36:18.784 [http-nio-8080-exec-5] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 09:36:25.753 [http-nio-8080-exec-7] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 09:36:26.870 [http-nio-8080-exec-2] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 09:36:31.761 [http-nio-8080-exec-7] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 09:36:36.082 [http-nio-8080-exec-4] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 09:36:37.047 [http-nio-8080-exec-7] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 09:36:44.014 [http-nio-8080-exec-9] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 09:36:44.375 [http-nio-8080-exec-5] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 09:36:45.456 [http-nio-8080-exec-1] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 09:36:46.488 [http-nio-8080-exec-9] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 09:36:47.008 [http-nio-8080-exec-1] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 09:36:58.291 [http-nio-8080-exec-4] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 09:37:01.827 [http-nio-8080-exec-9] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 09:37:02.120 [http-nio-8080-exec-5] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 09:37:09.786 [http-nio-8080-exec-7] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 09:37:47.770 [http-nio-8080-exec-10] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 09:37:48.275 [http-nio-8080-exec-6] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 09:37:48.276 [http-nio-8080-exec-6] INFO  c.imooc.o2o.web.shopadmin.ShopAuthManageController - 店铺权限管理请求到达
+2018-01-18 09:37:48.385 [http-nio-8080-exec-7] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 09:37:48.386 [http-nio-8080-exec-7] INFO  com.imooc.o2o.util.ShortNetAddressUtil - ready create connection...
+2018-01-18 09:37:48.527 [http-nio-8080-exec-7] INFO  com.imooc.o2o.util.ShortNetAddressUtil - response string: {"tinyurl":"http:\/\/dwz.cn\/7gz4CH","status":0,"longurl":"https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx0ef11c0049518bbb&redirect_uri=http://smyang.s1.natapp.cc/o2o/shopadmin/addshopauthmap&response_type=code&scope=snsapi_userinfo&state=%7BaaashopIdaaa%3A28%2CaaacreateTimeaaa%3A1516239468386%7D#wechat_redirect","err_msg":""}
+2018-01-18 09:37:48.529 [http-nio-8080-exec-7] INFO  com.imooc.o2o.util.ShortNetAddressUtil - tinyurl: http://dwz.cn/7gz4CH
+2018-01-18 09:38:07.755 [http-nio-8080-exec-10] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 09:38:11.822 [http-nio-8080-exec-9] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 09:38:11.823 [http-nio-8080-exec-9] INFO  com.imooc.o2o.util.ShortNetAddressUtil - ready create connection...
+2018-01-18 09:38:11.920 [http-nio-8080-exec-9] INFO  com.imooc.o2o.util.ShortNetAddressUtil - response string: {"tinyurl":"http:\/\/dwz.cn\/7gz507","status":0,"longurl":"https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx0ef11c0049518bbb&redirect_uri=http://smyang.s1.natapp.cc/o2o/shopadmin/addshopauthmap&response_type=code&scope=snsapi_userinfo&state=%7BaaashopIdaaa%3A28%2CaaacreateTimeaaa%3A1516239491823%7D#wechat_redirect","err_msg":""}
+2018-01-18 09:38:11.921 [http-nio-8080-exec-9] INFO  com.imooc.o2o.util.ShortNetAddressUtil - tinyurl: http://dwz.cn/7gz507
+2018-01-18 09:38:13.838 [http-nio-8080-exec-8] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 09:38:15.200 [http-nio-8080-exec-1] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 09:38:17.353 [http-nio-8080-exec-3] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 09:38:17.643 [http-nio-8080-exec-9] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 09:38:19.110 [http-nio-8080-exec-7] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 09:38:19.110 [http-nio-8080-exec-7] INFO  com.imooc.o2o.util.ShortNetAddressUtil - ready create connection...
+2018-01-18 09:38:19.126 [http-nio-8080-exec-4] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 09:38:19.126 [http-nio-8080-exec-4] INFO  c.imooc.o2o.web.shopadmin.ShopAuthManageController - 店铺权限管理请求到达
+2018-01-18 09:38:19.273 [http-nio-8080-exec-7] INFO  com.imooc.o2o.util.ShortNetAddressUtil - response string: {"tinyurl":"http:\/\/dwz.cn\/7gz57R","status":0,"longurl":"https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx0ef11c0049518bbb&redirect_uri=http://smyang.s1.natapp.cc/o2o/shopadmin/addshopauthmap&response_type=code&scope=snsapi_userinfo&state=%7BaaashopIdaaa%3A29%2CaaacreateTimeaaa%3A1516239499110%7D#wechat_redirect","err_msg":""}
+2018-01-18 09:38:19.273 [http-nio-8080-exec-7] INFO  com.imooc.o2o.util.ShortNetAddressUtil - tinyurl: http://dwz.cn/7gz57R
+2018-01-18 09:38:29.791 [http-nio-8080-exec-2] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 09:38:31.559 [http-nio-8080-exec-6] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 09:38:31.936 [http-nio-8080-exec-3] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 09:38:56.494 [http-nio-8080-exec-9] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 09:38:58.878 [http-nio-8080-exec-1] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 09:38:59.506 [http-nio-8080-exec-9] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 09:39:11.230 [http-nio-8080-exec-1] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 09:39:13.225 [http-nio-8080-exec-4] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 09:39:13.815 [http-nio-8080-exec-10] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 09:39:28.814 [http-nio-8080-exec-3] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 09:39:32.774 [http-nio-8080-exec-6] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 09:39:37.302 [http-nio-8080-exec-10] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 09:39:59.183 [http-nio-8080-exec-2] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 09:40:02.005 [http-nio-8080-exec-10] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 09:40:12.671 [http-nio-8080-exec-7] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 09:40:12.878 [http-nio-8080-exec-2] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 09:40:16.010 [http-nio-8080-exec-9] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 09:40:16.227 [http-nio-8080-exec-10] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 09:43:11.821 [http-nio-8080-exec-5] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来
+2018-01-18 09:43:12.773 [http-nio-8080-exec-9] INFO  c.i.o2o.interceptor.shopadmin.ShopLoginInterceptor - 请求到来

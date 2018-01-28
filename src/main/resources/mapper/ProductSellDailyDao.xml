@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.imooc.o2o.dao.ProductSellDailyDao">
+    <resultMap type="com.imooc.o2o.entity.ProductSellDaily" id="productSellDailyMap">
+        <id column="product_sell_daily_id" property="productSellDailyId"/>
+        <result column="create_time" property="createTime"/>
+        <result column="total" property="total"/>
+        <association property="shop" column="shop_id"
+			javaType="com.imooc.o2o.entity.Shop">
+			<id column="shop_id" property="shopId" />
+			<result column="shop_name" property="shopName" />
+		</association>
+		<association property="product" column="product_id" javaType="com.imooc.o2o.entity.Product">
+		    <id column="product_id" property="productId" />
+			<result column="product_name" property="productName" />
+		</association>
+    </resultMap>
+    <select id="selectProductSellDailyByCondition" resultMap="productSellDailyMap">
+        select 
+        psd.product_sell_daily_id,
+		psd.create_time,
+		psd.total,
+		s.shop_id,
+		s.shop_name,
+		p.product_id,
+		p.product_name
+        from
+        tb_product_sell_daily psd,
+        tb_shop s,
+        tb_product p
+        <where>
+            psd.product_id = p.product_id
+            and psd.shop_id = s.shop_id
+            <!-- 店铺信息查询 -->
+            <if test="productSellDailyCondition.shop != null and productSellDailyCondition.shop.shopId != null">
+                and psd.shop_id = #{productSellDailyCondition.shop.shopId}
+            </if>
+            <!-- 商品名模糊查询 -->
+            <if test="productSellDailyCondition.product!=null and productSellDailyCondition.product.productName!=null">
+                and p.product_name like '%${productSellDailyCondition.product.productName}%'
+            </if>
+            <if test="beginTime != null and endTime != null">
+                and create_time between #{beginTime} and #{endTime}
+            </if>
+            <if test="beginTime!=null and endTime==null">
+				and date_format(psd.create_time,'%Y-%m-%d') &gt;=
+				date_format(#{beginTime},'%Y-%m-%d')
+			</if>
+            <if test="beginTime == null and endTime != null">
+                and date_format(psd.create_time,'%Y-%m-%d') &lt;=
+				date_format(#{endTime},'%Y-%m-%d')
+            </if>
+        </where>
+    </select>
+    <insert id="insertProductSellDaily" parameterType="com.imooc.o2o.entity.ProductSellDaily">
+       insert into tb_product_sell_daily(product_id,shop_id,create_time,total)
+       (
+       select product_id, shop_id, create_time, count(product_id) AS total from tb_user_product_map 
+       where 
+       date_format(create_time, '%Y-%m-%d') = date_sub(curdate(), interval 1 day) group by product_id
+       )
+    </insert>
+</mapper>

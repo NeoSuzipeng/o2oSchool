@@ -1,0 +1,3 @@
+2018-01-18 09:33:40.515 [http-nio-8080-exec-10] ERROR com.imooc.o2o.util.ShortNetAddressUtil - url error :java.lang.NullPointerException
+2018-01-18 09:33:40.527 [http-nio-8080-exec-10] ERROR com.imooc.o2o.web.frontend.ProductDetailController - 二维码创建失败
+2018-01-18 09:39:59.264 [http-nio-8080-exec-2] ERROR com.imooc.o2o.util.ImageUtil - javax.imageio.IIOException: Can't read input file!
